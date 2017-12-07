@@ -95,7 +95,7 @@
 					<br>
 					
 					<div class="collapse" id="DropNieuw">
-						<form class="form-horizontal">
+						<form class="form-horizontal" method="post" action="PHP/NieuwActiviteit.php">
 							<fieldset>
 
 							<!-- Form Name -->
