@@ -79,13 +79,12 @@
 	</script>
   </head>
   <body onload="showActive()">
-    <h1 class="text-center">Activiteiten</h1>
-	
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
 				<div id="imaginary_container"> 
-					<div class="input-group stylish-input-group">
+					<div class="ActiviteitSearchMargin input-group stylish-input-group">
+						<button data-toggle="collapse" data-target="#DropNieuw" type="button" class="btn btn-primary">Nieuw</button>
 						<input id="ActiviteitSearch" type="text" class="form-control"  placeholder="Search" onkeyup="showSearch(this.value)">
 						<span class="input-group-addon">
 							<button type="submit">
@@ -95,19 +94,50 @@
 					</div>
 					<br>
 					
+					<div class="collapse" id="DropNieuw">
+						<form class="form-horizontal">
+							<fieldset>
+
+							<!-- Form Name -->
+							<legend>Nieuwe Activiteit</legend>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-md-4 control-label" for="txtRecordNaam">Activiteit naam</label>  
+							  <div class="col-md-4">
+							  <input id="txtRecordNaam" name="txtRecordNaam" type="text" placeholder="bv: Politie Leuven" class="form-control input-md" required="">
+								
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-md-4 control-label" for="txtComment">Comment</label>  
+							  <div class="col-md-4">
+							  <input id="txtComment" name="txtComment" type="text" placeholder="bv: plaatsen nieuwe camera" class="form-control input-md" required="">
+								
+							  </div>
+							</div>
+
+							<!-- Button -->
+							<div class="form-group">
+							  <label class="col-md-4 control-label" for="buttonStart"></label>
+							  <div class="col-md-4">
+								<button id="buttonStart" name="buttonStart" class="btn btn-primary">Start</button>
+							  </div>
+							</div>
+
+							</fieldset>
+							</form>
+					</div>
+					
 					<div id="ShowActive">
 					
-					</div>
+					</div>		
 					
 					<div id="ShowSearchList">
 					
 					</div>
-					
-					<!--<ul class="list-group">
-					  <li class="list-group-item">New <span class="badge">12</span></li>
-					  <li class="list-group-item">Deleted <span class="badge">5</span></li> 
-					  <li class="list-group-item">Warnings <span class="badge">3</span></li> 
-					</ul>-->
 					
 				</div>
 			</div>

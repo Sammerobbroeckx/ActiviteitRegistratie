@@ -2,6 +2,11 @@
 	session_start();
 	require("linkDB.php");
 
+	//RESET variables
+	unset($_SESSION["active"]);
+	unset($_SESSION["UserId"]);
+	unset($_SESSION["message"]);
+	
 	if(isset($_POST["naam"]))
 	{
 		$naam = $_POST["naam"];
@@ -21,6 +26,7 @@
 					if($paswoord == $row["UserPaswoord"])
 					{
 						$_SESSION["active"] = 696969;
+						$_SESSION["UserId"] = $row["UserId"];
 						//redirect to index page
 						echo '<meta http-equiv="refresh" content="0;url=../index.php" />';
 					}

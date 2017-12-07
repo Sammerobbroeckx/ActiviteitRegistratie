@@ -1,5 +1,12 @@
-[Thu Dec 07 08:33:23.276379 2017] [mpm_winnt:notice] [pid 4884:tid 632] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Thu Dec 07 08:33:23.276379 2017] [mpm_winnt:notice] [pid 4884:tid 632] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Thu Dec 07 08:33:23.276379 2017] [core:notice] [pid 4884:tid 632] AH00094: Command line: 'C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie/apache2/bin/httpd_usbwv8.exe -d C:/Users/robbroes/Desktop/ActiviteitRegistratie/apache2'
-[Thu Dec 07 08:33:23.291982 2017] [mpm_winnt:notice] [pid 4884:tid 632] AH00418: Parent: Created child process 7100
-[Thu Dec 07 08:33:24.104549 2017] [mpm_winnt:notice] [pid 7100:tid 700] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 07 13:27:28.750903 2017] [mpm_winnt:notice] [pid 6624:tid 664] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Thu Dec 07 13:27:28.750903 2017] [mpm_winnt:notice] [pid 6624:tid 664] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Thu Dec 07 13:27:28.750903 2017] [core:notice] [pid 6624:tid 664] AH00094: Command line: 'C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie/apache2/bin/httpd_usbwv8.exe -d C:/Users/robbroes/Desktop/ActiviteitRegistratie/apache2'
+[Thu Dec 07 13:27:28.758926 2017] [mpm_winnt:notice] [pid 6624:tid 664] AH00418: Parent: Created child process 1508
+[Thu Dec 07 13:27:29.088868 2017] [mpm_winnt:notice] [pid 1508:tid 680] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 07 13:38:52.765050 2017] [:error] [pid 1508:tid 1180] [client ::1:64751] PHP Notice:  Undefined variable: _SESSION in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 5, referer: http://localhost:8080/index.php
+[Thu Dec 07 13:39:44.985525 2017] [:error] [pid 1508:tid 1192] [client ::1:64757] PHP Notice:  Undefined variable: _SESSION in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 5, referer: http://localhost:8080/index.php
+[Thu Dec 07 13:42:29.939610 2017] [:error] [pid 1508:tid 1176] [client ::1:64809] PHP Notice:  Undefined variable: _SESSION in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 5, referer: http://localhost:8080/index.php
+[Thu Dec 07 13:45:51.981560 2017] [:error] [pid 1508:tid 1192] [client ::1:64855] PHP Notice:  Undefined variable: _SESSION in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 5, referer: http://localhost:8080/index.php
+[Thu Dec 07 13:45:51.981560 2017] [:error] [pid 1508:tid 1192] [client ::1:64855] PHP Notice:  Undefined variable: _SESSION in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 6, referer: http://localhost:8080/index.php
+[Thu Dec 07 13:49:48.322889 2017] [:error] [pid 1508:tid 1180] [client 172.20.10.1:59176] PHP Notice:  Undefined index: UserId in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 7, referer: http://172.20.10.2:8080/index.php
+[Thu Dec 07 13:49:51.886260 2017] [:error] [pid 1508:tid 1180] [client 172.20.10.1:59176] PHP Notice:  Undefined index: UserId in C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie\\root\\PHP\\ShowActive.php on line 7, referer: http://172.20.10.2:8080/index.php
