@@ -156,3 +156,15 @@ body, html
     border:0;
     background:transparent;
 }
+
+.ActivityActive
+{
+	background-color: #D6EAF8;
+}
+
+.ActiveDropdown
+{
+	background-color: #D6EAF8;	
+	border-radius: 3px;
+	padding: 10px;
+}

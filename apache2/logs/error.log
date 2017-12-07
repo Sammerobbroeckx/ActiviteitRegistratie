@@ -1,8 +1,5 @@
-[Wed Dec 06 19:18:22.980205 2017] [mpm_winnt:notice] [pid 2928:tid 660] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Wed Dec 06 19:18:22.980205 2017] [mpm_winnt:notice] [pid 2928:tid 660] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Wed Dec 06 19:18:22.980205 2017] [core:notice] [pid 2928:tid 660] AH00094: Command line: 'C:\\Users\\Samme\\Desktop\\ActiviteitRegistratie/apache2/bin/httpd_usbwv8.exe -d C:/Users/Samme/Desktop/ActiviteitRegistratie/apache2'
-[Wed Dec 06 19:18:22.981207 2017] [mpm_winnt:notice] [pid 2928:tid 660] AH00418: Parent: Created child process 4732
-[Wed Dec 06 19:18:23.262079 2017] [mpm_winnt:notice] [pid 4732:tid 664] AH00354: Child: Starting 64 worker threads.
-[Wed Dec 06 19:35:55.111341 2017] [:error] [pid 4732:tid 1180] [client ::1:64082] PHP Notice:  Undefined index: inputName in C:\\Users\\Samme\\Desktop\\ActiviteitRegistratie\\root\\PHP\\login.php on line 2, referer: http://localhost:8080/
-[Wed Dec 06 19:35:55.111341 2017] [:error] [pid 4732:tid 1180] [client ::1:64082] PHP Notice:  Undefined index: inputPassword in C:\\Users\\Samme\\Desktop\\ActiviteitRegistratie\\root\\PHP\\login.php on line 3, referer: http://localhost:8080/
-[Wed Dec 06 19:47:31.562575 2017] [:error] [pid 4732:tid 1180] [client ::1:64208] PHP Notice:  Undefined index: id in C:\\Users\\Samme\\Desktop\\ActiviteitRegistratie\\root\\PHP\\login.php on line 18, referer: http://localhost:8080/
+[Thu Dec 07 08:33:23.276379 2017] [mpm_winnt:notice] [pid 4884:tid 632] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Thu Dec 07 08:33:23.276379 2017] [mpm_winnt:notice] [pid 4884:tid 632] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Thu Dec 07 08:33:23.276379 2017] [core:notice] [pid 4884:tid 632] AH00094: Command line: 'C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie/apache2/bin/httpd_usbwv8.exe -d C:/Users/robbroes/Desktop/ActiviteitRegistratie/apache2'
+[Thu Dec 07 08:33:23.291982 2017] [mpm_winnt:notice] [pid 4884:tid 632] AH00418: Parent: Created child process 7100
+[Thu Dec 07 08:33:24.104549 2017] [mpm_winnt:notice] [pid 7100:tid 700] AH00354: Child: Starting 64 worker threads.
