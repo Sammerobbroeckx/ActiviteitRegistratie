@@ -13,7 +13,7 @@ echo '<div class="list-group">';
 
 while($row = mysqli_fetch_array($result)) 
 {
-    echo '<a href="#" class="list-group-item">'.$row["RecordNaam"].' <span class="badge text-right">'.$row["Datum"].'</span></a>';
+    echo '<a href="PHP/ActiviteitIndividueel.php?q='.$row["RecordId"].'" class="list-group-item">'.$row["RecordNaam"].' <span class="badge text-right">'.$row["Datum"].'</span></a></form>';
 }
 echo "</div>";
 mysqli_close($conn);

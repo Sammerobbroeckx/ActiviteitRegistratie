@@ -9,7 +9,7 @@
 	
 	if(isset($_POST["naam"]))
 	{
-		$naam = $_POST["naam"];
+		$naam = strtolower($_POST["naam"]);
 		$paswoord = hash("sha1", $_POST["paswoord"]);
 		
 		$sql = "SELECT * FROM user WHERE UserNaam='".$naam."'";

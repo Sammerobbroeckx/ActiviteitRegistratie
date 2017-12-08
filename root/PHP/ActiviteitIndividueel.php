@@ -17,29 +17,33 @@
   </head>
   <body>
 	<div class="container">
-        <div class="card card-container">
-            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-            <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin" method="post" action="PHP/login.php">
-                <span id="reauth-email" class="reauth-email"></span>
-                <input type="text" id="inputEmail" name="naam" class="form-control" placeholder="Naam" required autofocus>
-                <input type="password" id="inputPassword" name="paswoord" class="form-control" placeholder="Paswoord" required>
-                <div id="remember" class="checkbox">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
-				<?php
-					if(isset($_SESSION["message"]))
-					{
-						echo "<h6 class='text-center'>" .$_SESSION["message"]. "</h6>";
-					}
-					unset($_SESSION["message"]);
-				?>
-            </form><!-- /form -->
-        </div><!-- /card-container -->
+        <!-- Individueel Activiteit Formulier -->
+		
+		<?php
+			$q = $_GET['q'];
+
+			require("linkDB.php");
+
+			mysqli_select_db($conn,"urenregistratie");
+			$sql="SELECT * FROM record WHERE RecordId LIKE '%".$q."%' AND UserId='".$_SESSION["UserId"]."'";
+
+			$result = mysqli_query($conn,$sql);
+
+			echo '<div class="list-group">';
+
+			while($row = mysqli_fetch_array($result)) 
+			{
+				echo '<a class="list-group-item"><span class="badge text-right">'.$row["Datum"].'</span>'.$row["RecordNaam"].' </a>';
+				echo '<a class="list-group-item">Activiteituren: <span class="badge text-right">Start: </span>'.$row["StartActiviteit"].'<span class="badge text-right">Stop: </span>'.$row["StopActiviteit"].'</a>';
+				echo '<a class="list-group-item">Reistijden: <span class="badge text-right">Vertrek: </span>'.$row["StartRijden"].'<span class="badge text-right">Aankomst: </span>'.$row["StopRijden"].' <span class="badge text-right">Pauze: </span>'.$row["PauzeTijd"].'</a>';
+				echo '<a class="list-group-item"><span class="badge text-right">Omschrijving: </span>'.$row["Comment"].'</a>';
+				echo '<a class="list-group-item"><span class="badge text-right">OK Status: </span>'.$row["OK"].'</a>';
+			}
+			echo "</div><br>";
+			echo "<a href='../index.php'>TERUG</a>";
+			mysqli_close($conn);
+			?>
+		
     </div><!-- /container -->
 
     <!-- Optional JavaScript -->
