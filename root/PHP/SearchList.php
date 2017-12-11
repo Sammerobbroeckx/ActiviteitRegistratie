@@ -5,7 +5,15 @@ $q = $_GET['q'];
 require("linkDB.php");
 
 mysqli_select_db($conn,"urenregistratie");
-$sql="SELECT * FROM record WHERE RecordNaam LIKE '%".$q."%' AND UserId='".$_SESSION["UserId"]."'";
+
+if($q == "*")
+{
+	$sql="SELECT * FROM record WHERE UserId='".$_SESSION["UserId"]."'";
+}
+else
+{
+	$sql="SELECT * FROM record WHERE RecordNaam LIKE '%".$q."%' AND UserId='".$_SESSION["UserId"]."'";
+}
 
 $result = mysqli_query($conn,$sql);
 

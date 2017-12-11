@@ -182,3 +182,12 @@ body, html
 	padding: 10px;
 	margin-bottom: 10px;
 }
+
+#Aanpassen
+{
+	height:auto;
+	width:300px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
