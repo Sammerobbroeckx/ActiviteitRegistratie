@@ -29,18 +29,18 @@
 
 			$result = mysqli_query($conn,$sql);
 
-			echo '<div class="list-group">';
+			echo '<div class="list-group" id="info">';
 
 			while($row = mysqli_fetch_array($result)) 
 			{
-				echo '<a class="list-group-item"><span class="badge text-right">'.$row["Datum"].'</span>'.$row["RecordNaam"].' </a>';
-				echo '<a class="list-group-item">Activiteituren: <span class="badge text-right">Start: </span>'.$row["StartActiviteit"].'<span class="badge text-right">Stop: </span>'.$row["StopActiviteit"].'</a>';
-				echo '<a class="list-group-item">Reistijden: <span class="badge text-right">Vertrek: </span>'.$row["StartRijden"].'<span class="badge text-right">Aankomst: </span>'.$row["StopRijden"].' <span class="badge text-right">Pauze: </span>'.$row["PauzeTijd"].'</a>';
-				echo '<a class="list-group-item"><span class="badge text-right">Omschrijving: </span>'.$row["Comment"].'</a>';
-				echo '<a class="list-group-item"><span class="badge text-right">OK Status: </span>'.$row["OK"].'</a>';
+				echo '<a class="list-group-item ActivityActive"><span class="badge text-right">'.$row["Datum"].'</span>'.$row["RecordNaam"].' </a>';
+				echo '<a class="list-group-item ActivityActive">Activiteituren: <span class="badge text-right">Start: </span>'.$row["StartActiviteit"].'<span class="badge text-right">Stop: </span>'.$row["StopActiviteit"].'</a>';
+				echo '<a class="list-group-item ActivityActive">Reistijden: <span class="badge text-right">Vertrek: </span>'.$row["StartRijden"].'<span class="badge text-right">Aankomst: </span>'.$row["StopRijden"].' <span class="badge text-right">Pauze: </span>'.$row["PauzeTijd"].'</a>';
+				echo '<a class="list-group-item ActivityActive"><span class="badge text-right">Omschrijving: </span>'.$row["Comment"].'</a>';
+				echo '<a class="list-group-item ActivityActive"><span class="badge text-right">OK Status: </span>'.$row["OK"].'</a>';
 			}
 			echo "</div><br>";
-			echo "<a href='../index.php'>TERUG</a>";
+			echo "<a class='btn btn-primary' href='../index.php'>TERUG</a>";
 			mysqli_close($conn);
 			?>
 		

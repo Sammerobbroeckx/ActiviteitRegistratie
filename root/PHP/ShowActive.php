@@ -20,20 +20,26 @@ while($row = mysqli_fetch_array($result))
 
 	echo '	<div id="Aanpassen">
 				<table>
-					<tr><td>Beginnen rijden</td><td><input type="time" value="'.$row["StartRijden"].'"></input></td><td></td></tr>
+					<tr><td>Beginnen rijden</td><td><input type="time" value="'.$row["StartRijden"].'"></input></td></tr>
 					<tr><td>Stoppen rijden</td><td><input type="time" value="'.$row["StopRijden"].'"></input></td><td></td></tr>
-					<tr><td></td><td></td><td><button type="button" class="btn btn-primary" onclick="PasActiviteitAan('.$row["RecordId"].')">Opslaan</button></td></tr>
 				</table>
+				<button type="button" id="button" class="btn btn-primary" onclick="PasActiviteitAan('.$row["RecordId"].')">Opslaan</button>
 			</div>
 			<div id="Aanpassen">
 				<table>
 					<tr><td>Pauze</td><td><select><option value="0h00">0h00</option><option value="0h15">0h15</option><option value="0h30">0h30</option><option value="0h45">0h45</option><option value="1h00">1h00</option></select></td></tr>
-					<tr><td></td><td></td><td><button type="button" class="btn btn-primary" onclick="">Opslaan</button></td></tr>
 				</table>
+				<button type="button" class="btn btn-primary" id="button" onclick="">Opslaan</button>
+			</div>
+			<div id="Aanpassen">
+				<table>
+					<tr><td>Status OK?</td><td><select><option value="OK">OK</option><option value="NOK">NOK</option></select></td></tr>
+				</table>
+				<button type="button" id="button" class="btn btn-primary" onclick="">Opslaan</button>
 			</div>
 			<div id="AanpassenStop">
 				<table>
-					<tr><td><button type="button" class="btn btn-primary" onclick="">Stop</button></td></tr>
+					<tr><td><button type="button" id="stopButton" class="btn btn-danger">STOP</button></td></tr>
 				</table>
 			</div>';
 		//-------------------------------------------------//
