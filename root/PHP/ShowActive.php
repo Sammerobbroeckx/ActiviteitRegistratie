@@ -24,6 +24,17 @@ while($row = mysqli_fetch_array($result))
 					<tr><td>Stoppen rijden</td><td><input type="time" value="'.$row["StopRijden"].'"></input></td><td></td></tr>
 					<tr><td></td><td></td><td><button type="button" class="btn btn-primary" onclick="PasActiviteitAan('.$row["RecordId"].')">Opslaan</button></td></tr>
 				</table>
+			</div>
+			<div id="Aanpassen">
+				<table>
+					<tr><td>Pauze</td><td><select><option value="0h00">0h00</option><option value="0h15">0h15</option><option value="0h30">0h30</option><option value="0h45">0h45</option><option value="1h00">1h00</option></select></td></tr>
+					<tr><td></td><td></td><td><button type="button" class="btn btn-primary" onclick="">Opslaan</button></td></tr>
+				</table>
+			</div>
+			<div id="AanpassenStop">
+				<table>
+					<tr><td><button type="button" class="btn btn-primary" onclick="">Stop</button></td></tr>
+				</table>
 			</div>';
 		//-------------------------------------------------//
 	echo '</div></form>';

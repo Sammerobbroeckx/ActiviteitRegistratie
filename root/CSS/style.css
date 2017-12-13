@@ -185,9 +185,18 @@ body, html
 
 #Aanpassen
 {
-	height:auto;
+	height:160px;
 	width:300px;
 	padding: 10px;
 	border: 1px solid gray;
 	border-radius: 5px;
+	display: inline-block;
+}
+
+#AanpassenStop
+{
+	height:160px;
+	width:300px;
+	padding: 10px;
+	display: inline-block;
 }
