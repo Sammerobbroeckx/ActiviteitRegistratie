@@ -21,9 +21,10 @@
 	
 	<!-- AJAX -->
 	<script>
-		function PasActiviteitAan(str) 
+		function PasActiviteitRijdenAan(id) 
 		{
-			if (str == "") 
+			alert(werkt);
+			if (id == "") 
 			{
 				document.getElementById("ShowSearchList").innerHTML = "";
 				return;
@@ -48,7 +49,7 @@
 					}
 				};
 				
-				xmlhttp.open("GET","PHP/SearchList.php?q="+str,true);
+				xmlhttp.open("GET","PHP/PasActiviteitRijdenAan.php?q="+id+"&tijdStart="+tijdStart+"&tijdStop="+tijdStop,true);
 				xmlhttp.send();
 			}
 		}

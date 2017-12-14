@@ -17,13 +17,13 @@ while($row = mysqli_fetch_array($result))
     echo '<form action="PHP/ActiviteitEindigen.php"><a data-toggle="collapse" data-target="#ActivityActive'.$teller.'" href="#" class="list-group-item ActivityActive"><b>Active  </b>'.$row["RecordNaam"].' <span class="badge text-right">'.$row["Datum"].'</span></a><br>';
 	echo '	<div id="ActivityActive'.$teller.'" class="collapse ActiveDropdown">';
 		//------------JELLE HIER MOET LAYOUT KOMEN---------//
-
+//,StartRijden'.$teller.',StopRijden'.$teller.'
 	echo '	<div id="Aanpassen">
 				<table>
-					<tr><td>Beginnen rijden</td><td><input type="time" value="'.$row["StartRijden"].'"></input></td></tr>
-					<tr><td>Stoppen rijden</td><td><input type="time" value="'.$row["StopRijden"].'"></input></td><td></td></tr>
+					<tr><td>Beginnen rijden</td><td><input id="StartRijden'.$teller.'" type="time" value="'.$row["StartRijden"].'"></input></td></tr>
+					<tr><td>Stoppen rijden</td><td><input id="StopRijden'.$teller.'" type="time" value="'.$row["StopRijden"].'"></input></td><td></td></tr>
 				</table>
-				<button type="button" id="button" class="btn btn-primary" onclick="PasActiviteitAan('.$row["RecordId"].')">Opslaan</button>
+				<button type="button" id="button" class="btn btn-primary" onclick="PasActiviteitRijdenAan(test)">Opslaan</button>
 			</div>
 			<div id="Aanpassen">
 				<table>

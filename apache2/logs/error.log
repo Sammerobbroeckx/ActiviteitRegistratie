@@ -1,5 +1,5 @@
-[Wed Dec 13 13:58:38.916013 2017] [mpm_winnt:notice] [pid 6508:tid 656] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Wed Dec 13 13:58:38.916013 2017] [mpm_winnt:notice] [pid 6508:tid 656] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Wed Dec 13 13:58:38.916013 2017] [core:notice] [pid 6508:tid 656] AH00094: Command line: 'C:\\Users\\pauchetj\\Documents\\urenRegistratie\\ActiviteitRegistratie/apache2/bin/httpd_usbwv8.exe -d C:/Users/pauchetj/Documents/urenRegistratie/ActiviteitRegistratie/apache2'
-[Wed Dec 13 13:58:38.919021 2017] [mpm_winnt:notice] [pid 6508:tid 656] AH00418: Parent: Created child process 5460
-[Wed Dec 13 13:58:39.203186 2017] [mpm_winnt:notice] [pid 5460:tid 660] AH00354: Child: Starting 64 worker threads.
+[Thu Dec 14 08:19:57.131227 2017] [mpm_winnt:notice] [pid 7692:tid 656] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Thu Dec 14 08:19:57.131227 2017] [mpm_winnt:notice] [pid 7692:tid 656] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Thu Dec 14 08:19:57.131227 2017] [core:notice] [pid 7692:tid 656] AH00094: Command line: 'C:\\Users\\robbroes\\Desktop\\ActiviteitRegistratie/apache2/bin/httpd_usbwv8.exe -d C:/Users/robbroes/Desktop/ActiviteitRegistratie/apache2'
+[Thu Dec 14 08:19:57.146854 2017] [mpm_winnt:notice] [pid 7692:tid 656] AH00418: Parent: Created child process 8316
+[Thu Dec 14 08:19:57.396882 2017] [mpm_winnt:notice] [pid 8316:tid 672] AH00354: Child: Starting 64 worker threads.
